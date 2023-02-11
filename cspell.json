@@ -1,0 +1,32 @@
+{
+  "files": [
+    "**",
+    ".*/**"
+  ],
+  "ignorePaths": [
+    ".git",
+    ".gitignore",
+    ".vscode",
+    ".pre-commit-config.yaml",
+    "pyproject.toml"
+  ],
+  "words": [
+    "autobuild",
+    "Autobuild",
+    "autofix",
+    "automerge",
+    "buildscript",
+    "codeql",
+    "kentaro",
+    "markdownlint",
+    "nodenv",
+    "ooyama",
+    "pyenv",
+    "pyproject",
+    "rinchsan",
+    "shellcheck",
+    "textlint",
+    "textlintcache",
+    "tqer"
+  ]
+}
