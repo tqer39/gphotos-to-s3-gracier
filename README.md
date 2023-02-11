@@ -4,22 +4,22 @@
 
 - Google Photos から写真をダウンロードして、Amazon s3 Glacier にアップロードする
 
+## Setup
+
+```shell
+make setup
+```
+
 ## Installation
 
 ```shell
-pip install poetry
+make install
 ```
 
-```shell
-poetry install
-```
+## Upgrade
 
 ```shell
-pre-commit install --install-hooks
-```
-
-```shell
-pre-commit run -a
+make upgrade
 ```
 
 ## References

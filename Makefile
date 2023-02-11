@@ -10,7 +10,11 @@ setup:
 install:
 	brew bundle
 	asdf install
+	pip install poetry
 	poetry install
+	pre-commit install --install-hooks
+	pre-commit run -a
+
 
 upgrade: install
 	brew upgrade
