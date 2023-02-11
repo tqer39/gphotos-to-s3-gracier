@@ -4,9 +4,7 @@ name: pre-commit
 on:
   push:
     branches:
-      - develop
-      - staging
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -22,13 +20,16 @@ jobs:
       - name: set PY
         run: echo "PY=$(python -VV | sha256sum | cut -d' ' -f1)" >> $GITHUB_ENV
 
-      - uses: ./.github/actions/setup-python
-      - uses: actions/cache@v3
+      - name: Setup Python
+        uses: ./.github/actions/setup-python
+
+      - name: Cache pre-commit
+        uses: actions/cache@v3
         with:
           path: ~/.cache/pre-commit
           key: pre-commit|${{ env.PY }}|${{ hashFiles('.pre-commit-config.yaml') }}
+
       - name: pre-commit
-        id: pre-commit
         uses: pre-commit/action@v3.0.0
         with:
           extra_args: -a --show-diff-on-failure
