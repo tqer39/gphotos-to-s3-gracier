@@ -19,6 +19,7 @@
     "buildscript",
     "codeql",
     "kentaro",
+    "linuxbrew",
     "markdownlint",
     "nodenv",
     "ooyama",
