@@ -7,6 +7,10 @@
 ## Installation
 
 ```shell
+pip install -r requirements-dev.txt
+```
+
+```shell
 pre-commit install --install-hooks
 ```
 
