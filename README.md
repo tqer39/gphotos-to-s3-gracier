@@ -11,6 +11,10 @@ pip install -r requirements-dev.txt
 ```
 
 ```shell
+poetry install
+```
+
+```shell
 pre-commit install --install-hooks
 ```
 

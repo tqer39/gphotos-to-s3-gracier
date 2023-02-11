@@ -29,3 +29,17 @@ exclude_dirs = ["tests"]
 
 [tool.pytest.ini_options]
 disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
+
+[tool.poetry]
+name = "gps3g"
+version = "0.1.0"
+description = ""
+authors = ["tqer39 <tqer39@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
