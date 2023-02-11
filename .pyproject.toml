@@ -1,0 +1,31 @@
+# see: https://github.com/timothycrosley/isort/wiki/isort-Settings
+
+[tool.isort]
+combine_as_imports = true
+default_section = "THIRDPARTY"
+include_trailing_comma = true
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+line_length = 119
+multi_line_output = 3
+
+[tool.black]
+line-length = 119
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.mypy]
+disallow_untyped_defs = true
+ignore_missing_imports = true
+python_version = 3.10
+
+[tool.flake8]
+ignore = "E203,E501,F811,W503,E741"
+exclude = ".git,__pycache__/*"
+max-complexity = 10
+per-file-ignores = "__init__.py:F401"  # __init__.py の imported but unused を許容
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.pytest.ini_options]
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
