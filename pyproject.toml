@@ -39,6 +39,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+cement = "^3.0.8"
+pip = "^23.0"
 
 [build-system]
 requires = ["poetry-core"]

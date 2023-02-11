@@ -7,7 +7,7 @@
 ## Installation
 
 ```shell
-pip install -r requirements-dev.txt
+pip install poetry
 ```
 
 ```shell
