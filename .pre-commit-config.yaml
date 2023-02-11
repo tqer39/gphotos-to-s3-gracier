@@ -57,3 +57,9 @@ repos:
         additional_dependencies:
           - pyproject-flake8
           - flake8-pie
+
+  # yamllint
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
