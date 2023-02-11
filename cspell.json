@@ -15,6 +15,7 @@
     "Autobuild",
     "autofix",
     "automerge",
+    "autoupdate",
     "buildscript",
     "codeql",
     "kentaro",

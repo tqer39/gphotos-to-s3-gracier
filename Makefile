@@ -16,3 +16,4 @@ upgrade: install
 	brew upgrade
 	asdf update
 	asdf plugin-update --all
+	pre-commit autoupdate
