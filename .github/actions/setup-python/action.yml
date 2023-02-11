@@ -7,12 +7,10 @@ runs:
   using: composite
   steps:
     - name: Get current Python version
-      id: get-python-version
       run: echo "PYTHON_VERSION=$(cat .python-version)" >> $GITHUB_ENV
       shell: bash
 
     - name: Setup Python
-      id: setup-python
       uses: actions/setup-python@v4
       with:
         python-version: ${{ env.PYTHON_VERSION }}
