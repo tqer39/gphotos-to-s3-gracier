@@ -42,6 +42,13 @@ python = "^3.10"
 cement = "^3.0.8"
 pip = "^23.0"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^5.2"
+pytest-mock = "^3.6.0"
+pytest-cov = "^2.11.1"
+mypy = "^1.0.0"
+flake8 = "^6.0.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

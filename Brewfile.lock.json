@@ -252,7 +252,7 @@
     },
     "tap": {
       "homebrew/bundle": {
-        "revision": "65bde84265a3e9726d18323e390a15c45cdc8499"
+        "revision": "bac31a976d146f35c182dec6f6d65f7a917fd8c0"
       },
       "homebrew/cask-fonts": {
         "revision": "55531fc1c5d5beb4ec17434e6ad19df7cc02ad25"

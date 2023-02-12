@@ -17,6 +17,7 @@
     "automerge",
     "autoupdate",
     "buildscript",
+    "codecov",
     "codeql",
     "kentaro",
     "linuxbrew",
