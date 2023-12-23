@@ -63,7 +63,7 @@ repos:
 
   # black
   - repo: https://github.com/ambv/black
-    rev: 22.3.0
+    rev: 23.12.1
     hooks:
       - id: black
         types: [python]
